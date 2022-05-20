@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- css -->
+    <link rel="stylesheet" href="style.css" />
+
+    <!-- Uma boa prática para normalizar o css, que pode ser encontrada no link
+            https://necolas.github.io/normalize.css/  -->
+    <link rel="stylesheet" href="normalize.css" />
+
+    <!-- Fontes importadas -->
+    <link
+      href="//db.onlinewebfonts.com/c/390289fedd068780e28c0f9f259c3782?family=ITC+Bauhaus"
+      rel="stylesheet"
+      type="text/css"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@200;300;400&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Icones -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css"
+    />
+  </head>
+  <body>
+    <!-- cabeçalho -->
+    <header class="cab fixed-navbar" id="cab">
+      <nav class="navbar flex">
+        <div class="container flex">
+          <a href="index.html" class="navbar-brand flex">
+            <div class="logotipo">
+              <div class="logo">
+                <span id="logo">Gênesis</span>
+              </div>
+              <div class="sub">
+                <span id="sub">Laboratório de Citologia</span>
+              </div>
+            </div>
+          </a>
+
+          <!-- Botão do Menu -->
+          <button type="button" class="navbar-toggler flex">
+            <img src="./assets/images/icone-menu-degrade.png" />
+          </button>
+
+          <!-- Criação dos componentes do cabeçalho utilizando uma lista não ordenada -->
+          <div class="navbar-collapse">
+            <ul class="navbar-nav">
+              <li>
+                <a href="index.html" class="nav-link">Home</a>
+              </li>
+              <li class="nav-item">
+                <a href="sobre.html" class="nav-link">Sobre Nós</a>
+              </li>
+              <li class="nav-item">
+                <a href="servicos.html" class="nav-link">Serviços</a>
+              </li>
+              <li class="nav-item">
+                <a href="contato.html" class="nav-link">Contato</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+      <!-- Conteúdo principal
+           Obs: como ele se encontra dentro do Cabeçalho e a
+           responsividade não foi feita para muitos valores, 
+           pode ficar mal posicionado dependendo da resolução -->
+      <div class="banner">
+        <div class="container1">
+          <div class="banner-text">
+            <h1>Para a sua saúde, conte com o Laboratório Gênesis</h1>
+            <p class="text">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum
+              esse nostrum libero perferendis nihil veritatis dolor quae, velit
+              aut, debitis, fuga quisquam illum ab corrupti at omnis
+              necessitatibus vero odio?
+            </p>
+          </div>
+      <!-- Imagem que compoe o conteúdo principal -->
+          <div class="banner-image">
+            <img
+              id="banner"
+              src="./assets/images/microscopio.png"
+              alt="banner mulher usando microscopio"
+            />
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- Ícones disponíveis em 
+         https://fontawesome.com/v4/ -->
+    <div class="icons">
+      <a
+        href="https://www.instagram.com/genesiscitologia/"
+        target="_blank"
+        class="btn"
+        ><i class="fa fa-instagram" aria-hidden="true"></i
+      ></a>
+      <a
+        href="https://www.google.com/maps/uv?pb=!1s0xa5a04d524fffff%3A0x3272656f945380ce!3m1!7e115!4s%2Fmaps%2Fplace%2Fg%25C3%25AAnesis%2Blaborat%25C3%25B3rio%2Bde%2Bcitologia%2Bendere%25C3%25A7o%2F%40-19.6299074%2C-43.2132995%2C3a%2C75y%2C6.69h%2C90t%2Fdata%3D*213m4*211e1*213m2*211s2i1WZqK-KfVsVqKtPPwGGw*212e0*214m2*213m1*211s0xa5a04d524fffff%3A0x3272656f945380ce%3Fsa%3DX!5sg%C3%AAnesis%20laborat%C3%B3rio%20de%20citologia%20endere%C3%A7o%20-%20Pesquisa%20Google!15sCgIgAQ&imagekey=!1e2!2s2i1WZqK-KfVsVqKtPPwGGw&hl=pt-BR&sa=X&ved=2ahUKEwjqxPrf2O73AhUlrpUCHR4PAa8Qpx96BAg6EAg"
+        target="_blank"
+        class="btn"
+        ><i class="fa fa-map-marker" aria-hidden="true"></i
+      ></a>
+      <a
+        href="https://www.facebook.com/GenesisLaboratorioDeCitologia/"
+        target="_blank"
+        class="btn"
+        ><i class="fa fa-facebook-square" aria-hidden="true"></i
+      ></a>
+    </div>
+
+    <!-- js -->
+    <script src="codigo.js"></script>
+  </body>
+</html>
